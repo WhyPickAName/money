@@ -1,0 +1,176 @@
+[debug] [2023-01-12T21:36:06.537Z] ----------------------------------------------------------------------
+[debug] [2023-01-12T21:36:06.539Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\laptop\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-12T21:36:06.539Z] CLI Version:   11.20.0
+[debug] [2023-01-12T21:36:06.539Z] Platform:      win32
+[debug] [2023-01-12T21:36:06.539Z] Node Version:  v16.18.0
+[debug] [2023-01-12T21:36:06.540Z] Time:          Thu Jan 12 2023 21:36:06 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-01-12T21:36:06.540Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-12T21:36:06.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T21:36:06.545Z] > authorizing via signed-in user (jamesscalescontact@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Repos\money
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-12T21:36:55.223Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-01-12T21:36:55.758Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-01-12T21:36:55.758Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2023-01-12T21:37:04.606Z] ----------------------------------------------------------------------
+[debug] [2023-01-12T21:37:04.607Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\laptop\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-12T21:37:04.608Z] CLI Version:   11.20.0
+[debug] [2023-01-12T21:37:04.608Z] Platform:      win32
+[debug] [2023-01-12T21:37:04.608Z] Node Version:  v16.18.0
+[debug] [2023-01-12T21:37:04.608Z] Time:          Thu Jan 12 2023 21:37:04 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-01-12T21:37:04.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-12T21:37:04.613Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T21:37:04.614Z] > authorizing via signed-in user (jamesscalescontact@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Repos\money
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-01-12T21:37:19.236Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-01-12T21:37:19.236Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"money","name":"money"}
+[debug] [2023-01-12T21:37:20.072Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2023-01-12T21:37:20.072Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id must be at least 6 characters long]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id must be at least 6 characters long"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2023-01-12T21:37:20.283Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id must be at least 6 characters long]
+    at responseToError (C:\Users\laptop\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\laptop\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-01-12T21:38:17.304Z] ----------------------------------------------------------------------
+[debug] [2023-01-12T21:38:17.306Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\laptop\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-12T21:38:17.306Z] CLI Version:   11.20.0
+[debug] [2023-01-12T21:38:17.307Z] Platform:      win32
+[debug] [2023-01-12T21:38:17.307Z] Node Version:  v16.18.0
+[debug] [2023-01-12T21:38:17.307Z] Time:          Thu Jan 12 2023 21:38:17 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-01-12T21:38:17.307Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-12T21:38:17.313Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-12T21:38:17.313Z] > authorizing via signed-in user (jamesscalescontact@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Repos\money
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-12T21:38:28.837Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-01-12T21:38:29.462Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-01-12T21:38:29.462Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project money-3f739 (money) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-01-12T21:39:26.511Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-01-12T21:39:26.642Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-01-12T21:39:26.643Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.15.0","browserURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.tgz"},"live":{"version":"9.15","browserURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.15.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.15.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.15.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.15.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.memory.js"}}
+[info] +  Wrote dist/money/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Repos\money 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=726114168&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-01-12T21:39:39.316Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-01-12T21:39:39.316Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-01-12T21:39:39.752Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-01-12T21:39:39.752Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-01-12T21:39:39.756Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-01-12T21:39:40.137Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-01-12T21:39:40.137Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"WhyPickAName","id":52532766,"node_id":"MDQ6VXNlcjUyNTMyNzY2","avatar_url":"https://avatars.githubusercontent.com/u/52532766?v=4","gravatar_id":"","url":"https://api.github.com/users/WhyPickAName","html_url":"https://github.com/WhyPickAName","followers_url":"https://api.github.com/users/WhyPickAName/followers","following_url":"https://api.github.com/users/WhyPickAName/following{/other_user}","gists_url":"https://api.github.com/users/WhyPickAName/gists{/gist_id}","starred_url":"https://api.github.com/users/WhyPickAName/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/WhyPickAName/subscriptions","organizations_url":"https://api.github.com/users/WhyPickAName/orgs","repos_url":"https://api.github.com/users/WhyPickAName/repos","events_url":"https://api.github.com/users/WhyPickAName/events{/privacy}","received_events_url":"https://api.github.com/users/WhyPickAName/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":7,"public_gists":0,"followers":1,"following":1,"created_at":"2019-07-04T10:57:25Z","updated_at":"2022-10-21T10:48:53Z","private_gists":0,"total_private_repos":5,"owned_private_repos":5,"disk_usage":6769,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as WhyPickAName 
+[info] 
+[debug] [2023-01-12T21:44:08.052Z] >>> [apiv2][query] GET https://api.github.com/repos/WhyPickAName/money/actions/secrets/public-key type=owner
+[debug] [2023-01-12T21:44:08.389Z] <<< [apiv2][status] GET https://api.github.com/repos/WhyPickAName/money/actions/secrets/public-key 200
+[debug] [2023-01-12T21:44:08.389Z] <<< [apiv2][body] GET https://api.github.com/repos/WhyPickAName/money/actions/secrets/public-key {"key_id":"568250167242549743","key":"RyA5571sDEvYg8dlFBCTLT/2OA9kTeb1AgjWYdE7VHk="}
+[debug] [2023-01-12T21:44:08.394Z] >>> [apiv2][query] GET https://api.github.com/repos/WhyPickAName/money [none]
+[debug] [2023-01-12T21:44:08.727Z] <<< [apiv2][status] GET https://api.github.com/repos/WhyPickAName/money 200
+[debug] [2023-01-12T21:44:08.727Z] <<< [apiv2][body] GET https://api.github.com/repos/WhyPickAName/money {"id":588327319,"node_id":"R_kgDOIxEplw","name":"money","full_name":"WhyPickAName/money","private":false,"owner":{"login":"WhyPickAName","id":52532766,"node_id":"MDQ6VXNlcjUyNTMyNzY2","avatar_url":"https://avatars.githubusercontent.com/u/52532766?v=4","gravatar_id":"","url":"https://api.github.com/users/WhyPickAName","html_url":"https://github.com/WhyPickAName","followers_url":"https://api.github.com/users/WhyPickAName/followers","following_url":"https://api.github.com/users/WhyPickAName/following{/other_user}","gists_url":"https://api.github.com/users/WhyPickAName/gists{/gist_id}","starred_url":"https://api.github.com/users/WhyPickAName/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/WhyPickAName/subscriptions","organizations_url":"https://api.github.com/users/WhyPickAName/orgs","repos_url":"https://api.github.com/users/WhyPickAName/repos","events_url":"https://api.github.com/users/WhyPickAName/events{/privacy}","received_events_url":"https://api.github.com/users/WhyPickAName/received_events","type":"User","site_admin":false},"html_url":"https://github.com/WhyPickAName/money","description":null,"fork":false,"url":"https://api.github.com/repos/WhyPickAName/money","forks_url":"https://api.github.com/repos/WhyPickAName/money/forks","keys_url":"https://api.github.com/repos/WhyPickAName/money/keys{/key_id}","collaborators_url":"https://api.github.com/repos/WhyPickAName/money/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/WhyPickAName/money/teams","hooks_url":"https://api.github.com/repos/WhyPickAName/money/hooks","issue_events_url":"https://api.github.com/repos/WhyPickAName/money/issues/events{/number}","events_url":"https://api.github.com/repos/WhyPickAName/money/events","assignees_url":"https://api.github.com/repos/WhyPickAName/money/assignees{/user}","branches_url":"https://api.github.com/repos/WhyPickAName/money/branches{/branch}","tags_url":"https://api.github.com/repos/WhyPickAName/money/tags","blobs_url":"https://api.github.com/repos/WhyPickAName/money/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/WhyPickAName/money/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/WhyPickAName/money/git/refs{/sha}","trees_url":"https://api.github.com/repos/WhyPickAName/money/git/trees{/sha}","statuses_url":"https://api.github.com/repos/WhyPickAName/money/statuses/{sha}","languages_url":"https://api.github.com/repos/WhyPickAName/money/languages","stargazers_url":"https://api.github.com/repos/WhyPickAName/money/stargazers","contributors_url":"https://api.github.com/repos/WhyPickAName/money/contributors","subscribers_url":"https://api.github.com/repos/WhyPickAName/money/subscribers","subscription_url":"https://api.github.com/repos/WhyPickAName/money/subscription","commits_url":"https://api.github.com/repos/WhyPickAName/money/commits{/sha}","git_commits_url":"https://api.github.com/repos/WhyPickAName/money/git/commits{/sha}","comments_url":"https://api.github.com/repos/WhyPickAName/money/comments{/number}","issue_comment_url":"https://api.github.com/repos/WhyPickAName/money/issues/comments{/number}","contents_url":"https://api.github.com/repos/WhyPickAName/money/contents/{+path}","compare_url":"https://api.github.com/repos/WhyPickAName/money/compare/{base}...{head}","merges_url":"https://api.github.com/repos/WhyPickAName/money/merges","archive_url":"https://api.github.com/repos/WhyPickAName/money/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/WhyPickAName/money/downloads","issues_url":"https://api.github.com/repos/WhyPickAName/money/issues{/number}","pulls_url":"https://api.github.com/repos/WhyPickAName/money/pulls{/number}","milestones_url":"https://api.github.com/repos/WhyPickAName/money/milestones{/number}","notifications_url":"https://api.github.com/repos/WhyPickAName/money/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/WhyPickAName/money/labels{/name}","releases_url":"https://api.github.com/repos/WhyPickAName/money/releases{/id}","deployments_url":"https://api.github.com/repos/WhyPickAName/money/deployments","created_at":"2023-01-12T21:28:19Z","updated_at":"2023-01-12T21:28:19Z","pushed_at":"2023-01-12T21:28:20Z","git_url":"git://github.com/WhyPickAName/money.git","ssh_url":"git@github.com:WhyPickAName/money.git","clone_url":"https://github.com/WhyPickAName/money.git","svn_url":"https://github.com/WhyPickAName/money","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","security_and_analysis":{"secret_scanning":{"status":"disabled"},"secret_scanning_push_protection":{"status":"disabled"}},"network_count":0,"subscribers_count":1}
+[debug] [2023-01-12T21:44:08.729Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts [none]
+[debug] [2023-01-12T21:44:08.729Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts {"accountId":"github-action-588327319","serviceAccount":{"displayName":"GitHub Actions (WhyPickAName/money)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository WhyPickAName/money"}}
+[debug] [2023-01-12T21:44:09.737Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts 200
+[debug] [2023-01-12T21:44:09.737Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts [omitted]
+[debug] [2023-01-12T21:44:09.738Z] >>> [apiv2][query] GET https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts/github-action-588327319@money-3f739.iam.gserviceaccount.com [none]
+[debug] [2023-01-12T21:44:09.739Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/money-3f739:getIamPolicy [none]
+[debug] [2023-01-12T21:44:10.339Z] <<< [apiv2][status] GET https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts/github-action-588327319@money-3f739.iam.gserviceaccount.com 200
+[debug] [2023-01-12T21:44:10.340Z] <<< [apiv2][body] GET https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts/github-action-588327319@money-3f739.iam.gserviceaccount.com {"name":"projects/money-3f739/serviceAccounts/github-action-588327319@money-3f739.iam.gserviceaccount.com","projectId":"money-3f739","uniqueId":"104656240037659169669","email":"github-action-588327319@money-3f739.iam.gserviceaccount.com","displayName":"GitHub Actions (WhyPickAName/money)","etag":"MDEwMjE5MjA=","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository WhyPickAName/money","oauth2ClientId":"104656240037659169669"}
+[debug] [2023-01-12T21:44:10.535Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/money-3f739:getIamPolicy 200
+[debug] [2023-01-12T21:44:10.535Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/money-3f739:getIamPolicy {"version":1,"etag":"BwXyF/J9ZCk=","bindings":[{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-743421853161@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-a5t01@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-743421853161@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-a5t01@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:jamesscalescontact@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-743421853161@gcp-sa-pubsub.iam.gserviceaccount.com"]}]}
+[debug] [2023-01-12T21:44:10.538Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/money-3f739:setIamPolicy [none]
+[debug] [2023-01-12T21:44:10.538Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/money-3f739:setIamPolicy {"policy":{"version":1,"etag":"BwXyF/J9ZCk=","bindings":[{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-743421853161@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-a5t01@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-743421853161@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-a5t01@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:jamesscalescontact@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-743421853161@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-588327319@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-588327319@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-588327319@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-588327319@money-3f739.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2023-01-12T21:44:11.715Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/money-3f739:setIamPolicy 200
+[debug] [2023-01-12T21:44:11.716Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/money-3f739:setIamPolicy {"version":1,"etag":"BwXyGAR4cPA=","bindings":[{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-743421853161@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-a5t01@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-588327319@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-588327319@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-743421853161@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-a5t01@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:jamesscalescontact@gmail.com"]},{"role":"roles/pubsub.serviceAgent","members":["serviceAccount:service-743421853161@gcp-sa-pubsub.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-588327319@money-3f739.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-588327319@money-3f739.iam.gserviceaccount.com"]}]}
+[debug] [2023-01-12T21:44:11.716Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts/github-action-588327319@money-3f739.iam.gserviceaccount.com/keys [none]
+[debug] [2023-01-12T21:44:11.716Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts/github-action-588327319@money-3f739.iam.gserviceaccount.com/keys {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2023-01-12T21:44:12.877Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts/github-action-588327319@money-3f739.iam.gserviceaccount.com/keys 200
+[debug] [2023-01-12T21:44:12.877Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/money-3f739/serviceAccounts/github-action-588327319@money-3f739.iam.gserviceaccount.com/keys {"name":"projects/money-3f739/serviceAccounts/github-action-588327319@money-3f739.iam.gserviceaccount.com/keys/3460df6fc1150138475c3027ebefd0e966c7f74b","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE","privateKeyData":"ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAibW9uZXktM2Y3MzkiLAogICJwcml2YXRlX2tleV9pZCI6ICIzNDYwZGY2ZmMxMTUwMTM4NDc1YzMwMjdlYmVmZDBlOTY2YzdmNzRiIiwKICAicHJpdmF0ZV9rZXkiOiAiLS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tXG5NSUlFdlFJQkFEQU5CZ2txaGtpRzl3MEJBUUVGQUFTQ0JLY3dnZ1NqQWdFQUFvSUJBUURXVHhNMjFCRHkvSndxXG5DOFRxQ21oelhVMzdnZUwwZG1LWTRKSUJ6Q1ZoVzVyZmVBeWx6RjM2T0VMMHVmb1d2dmJuSzAxek9zUHFoVVk0XG5OOEdLUFVEWFg5SlpTVTZVbEhseTFHbERnclEvUzA1Vk4yRnphOWZRRjJLWjFaREpQYmtwVkYxUGc2NHc3V3lDXG5xMS94bGprR0tOblFlWDh0cGtGTlczU2Q3YWRJcm90RGhkdXFtcGgwajZDN0Z3eDRaTjlENy8vOUx5bysrd3h6XG55UVdUWDJ0UDZqMWhWY3VoeXh6bG9UWGNRQ2QxRkg4Y3hSRVVJUE1UU0dBRWJVV3g0MHBHSklURVZidnpLMEJZXG5ma1Z5NEwySEtxdStmRjRyelNDdnF0VUFhL2tpM3FMNlNnZWo3a2VxZUlBaEFNeDFkVzNJS3duMG9PNmZwZEtBXG41ZUplT2VVOUFnTUJBQUVDZ2dFQUxVbHVmUUtaUmsrOVRHRktUazYrdmNvMHhYWXdHSXEvMFNCN21pZWlxbzBxXG5FQmtWU3lBQnAvT2xxb04yWnNJWitNVzh5eUhhN3I4VkZLSXJvdVBJeFBwNXYrWnUxWlQraVJaNzNBbE52NlpSXG5PazdHcUJaYzk1dEplY3FZbXY0UkY3dTlNQ1ZhZFBwbkdNSFFONFFRTHM0SklUWGJlekVMMGFZRzRheXIwZjYxXG5halFiWkcrclhibktiWjdYTWFCK2l3N1ZyTzJQRE9MazN3eDIrUmcrQWJTTGM3ZUVLajltRzRyOFNmU3FGU0JuXG5zOXZlQldsTGNzeDF6ZGpqY3Y0VlZJY0lZWjFBS0NUYk9Wd1M4RGdHZVBOQmhuZm9WUzlwYnFMQmZucXRRVHlNXG56bUM2dzNNZlBZYXJJa3hLMzNlZGJlbjBtd3dlS3VXTkh4U3RHcENPSFFLQmdRRHVyV0tLQ3l1cXFJTGVMb2U1XG5pRG1pcEVnSC92VjlrSENFOVo1TmlsRHQ2QVFscUExRm82b0t1OCtEaTIraCtkb0RCWmxZc0h5RUJ4dXI2Z0FmXG5OSDNYSWEzZEY3bmNnUVlKVVVia2gyWjNTQlpzanlpRG1OeXlLNnZwc21LRk8zMUcyK0kvRkMza3BOM2huVDN5XG41b2pLNG9JanBtUC9OSExaZVV1TXdLOFgvd0tCZ1FEbDNPMGNDdjgxYTJOdkJweW51SHFsUnFsejFEM0hWRDRVXG5WUEJjYm5GK2YxaWZsWmJVRS95VEowUTIrL2dGK1o3WDYyZnlhS1ZjVWdnT0VJRnNTcTZOWmdGQ0EwWVdkL3lGXG53SStRd1Bzb2ZHRnpRekRtOVJBUkYxR0cwTWRmbTlxVmtsNzJwRHd2NnNpblFqMzUwYmh2czc0dlVsakp6U05vXG5jalhLWmxWaXd3S0JnREM3WEFROWRhUDVsZ2JSVDByMVluY3Z2YmxNT0VsejVWVndaT3NHRTdJUGpsRTE5OGZCXG5PK1hISlA2QnlNQTBxR3UzaC9EUTBBdVErL2hrNWJONVh6dytseVl1UXZlZnJHRFlwSFhpbzJ3MVhzYTVrQmNXXG5iZkUrODNIYXh6eld3YVJuSHRHc1NCYUlCdm1heGx4Qzc2a2xDRmRKRU4rNWtMMlFnM2x3bWc5M0FvR0JBTWViXG52Uy9BQVBVVHAwcFB0SlFWS0RRRUU3eXBEMmpjSi9paDlnUmVTQ0p3VmJablFZNHpPUDlVZHZGRWg1SXd2WmFGXG5MMFFiU1pYTkNuK2tKNit4ZnJqOVhwUkRvWVo3ZFlkMHUzY1pqa0VQR2RUdEFUZGVrakExVHEvQzk0OTRHUzRQXG42SFZJRTVnTXkyZ3Jwd1FjOFl2V3k0M3VkWG53c1JIUE5CVHFIclhmQW9HQUVGeGk0eFVVeUl6MXhETUR1WlU5XG5XU1F3SjNQa2RRK2tyWTQyRVNaTmM3ZkpGYjc0eDh1MGhmc2pSLzNUNDVDY3VIQ250SDUyVTkzL1V4Qk1mb3UvXG5odkZRZHQzNzBOc0k3aHlHamlGODNsdzJma3N5dGRyTmI3TUpnQVJmUzNRdUw5SzJqRU1MV1NJUGJJeHhBN1lSXG5aK2EzcElMaE1ZQTUwVmpsSEV1Nnd6OD1cbi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS1cbiIsCiAgImNsaWVudF9lbWFpbCI6ICJnaXRodWItYWN0aW9uLTU4ODMyNzMxOUBtb25leS0zZjczOS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsCiAgImNsaWVudF9pZCI6ICIxMDQ2NTYyNDAwMzc2NTkxNjk2NjkiLAogICJhdXRoX3VyaSI6ICJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvYXV0aCIsCiAgInRva2VuX3VyaSI6ICJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsCiAgImF1dGhfcHJvdmlkZXJfeDUwOV9jZXJ0X3VybCI6ICJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9vYXV0aDIvdjEvY2VydHMiLAogICJjbGllbnRfeDUwOV9jZXJ0X3VybCI6ICJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9yb2JvdC92MS9tZXRhZGF0YS94NTA5L2dpdGh1Yi1hY3Rpb24tNTg4MzI3MzE5JTQwbW9uZXktM2Y3MzkuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iCn0K","validAfterTime":"2023-01-12T21:44:12Z","validBeforeTime":"9999-12-31T23:59:59Z","keyAlgorithm":"KEY_ALG_RSA_2048","keyOrigin":"GOOGLE_PROVIDED","keyType":"USER_MANAGED"}
+[info] 
+[info] +  Created service account github-action-588327319 with Firebase Hosting admin permissions. 
+[debug] [2023-01-12T21:44:12.886Z] >>> [apiv2][query] PUT https://api.github.com/repos/WhyPickAName/money/actions/secrets/FIREBASE_SERVICE_ACCOUNT_MONEY_3F739 [none]
+[debug] [2023-01-12T21:44:12.886Z] >>> [apiv2][body] PUT https://api.github.com/repos/WhyPickAName/money/actions/secrets/FIREBASE_SERVICE_ACCOUNT_MONEY_3F739 {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2023-01-12T21:44:13.711Z] <<< [apiv2][status] PUT https://api.github.com/repos/WhyPickAName/money/actions/secrets/FIREBASE_SERVICE_ACCOUNT_MONEY_3F739 201
+[debug] [2023-01-12T21:44:13.712Z] <<< [apiv2][body] PUT https://api.github.com/repos/WhyPickAName/money/actions/secrets/FIREBASE_SERVICE_ACCOUNT_MONEY_3F739 {}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_MONEY_3F739. 
+[info] i  You can manage your secrets at https://github.com/WhyPickAName/money/settings/secrets. 
+[info] 
